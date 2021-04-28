@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 28 12:59:21 2021
+# Process ID: 2264320
+# Current directory: C:/Users/user/Desktop/FPGA_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2302764 C:\Users\user\Desktop\FPGA_UART\project_uart3.xpr
+# Log file: C:/Users/user/Desktop/FPGA_UART/vivado.log
+# Journal file: C:/Users/user/Desktop/FPGA_UART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/FPGA_UART/project_uart3.xpr
+INFO: [Project 1-313] Project file moved from 'D:/0FPGA/project_uart3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1156.551 ; gain = 14.539
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/user/Desktop/FPGA_UART/project_uart3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/user/Desktop/FPGA_UART/project_uart3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uart16550:2.0 - axi_uart16550_0
+Successfully read diagram <design_1> from block design file <C:/Users/user/Desktop/FPGA_UART/project_uart3.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1306.469 ; gain = 149.918
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\user\Desktop\FPGA_UART\project_uart3.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/FPGA_UART/project_uart3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Wed Apr 28 13:00:16 2021] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/runme.log
+[Wed Apr 28 13:00:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1560.520 ; gain = 185.633
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 28 13:15:44 2021] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/runme.log
+[Wed Apr 28 13:15:44 2021] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1841.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 295 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1858.691 ; gain = 298.172
+INFO: [Common 17-344] 'open_run' was cancelled
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1863.055 ; gain = 4.363
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A7E8EDA
+set_property PROGRAM.FILE {C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3436.824 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203A7E8EDA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A7E8EDA
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 28 14:17:34 2021...
