@@ -2,12 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Apr 28 16:40:20 2021
-# Process ID: 8296
-# Current directory: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1
+# Start of session at: Thu Apr 29 17:07:47 2021
+# Process ID: 21712
+# Current directory: D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/design_1_wrapper.vds
-# Journal file: C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1\vivado.jou
+# Log file: D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -17,80 +17,108 @@ Command: synth_design -top design_1_wrapper -part xc7vx485tffg1761-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-86] Your Synthesis license expires in 29 day(s)
 INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1556
+INFO: [Synth 8-7075] Helper process launched with PID 11364
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1350.117 ; gain = 206.621
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1349.816 ; gain = 209.758
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uart16550_0_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_axi_uart16550_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uart16550_0_0' (2#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_axi_uart16550_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'baudoutn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'ddis' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'dtrn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'out1n' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'out2n' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'rtsn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'rxrdyn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7071] port 'txrdyn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'design_1_axi_uart16550_0_0' has 35 connections declared, but only 27 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
-INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (3#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:237]
-WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' has 8 connections declared, but only 7 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:237]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (4#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (5#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (6#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (7#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:474]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1130]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (8#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1130]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1262]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (9#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1262]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1394]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (10#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1609]
-WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1609]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1609]
-WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1609]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 52 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1609]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (11#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1394]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1898]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (12#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1898]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (13#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (14#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:474]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1664]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (15#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (16#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1810]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1810]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (17#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (18#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1856]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1856]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (19#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_lmb_bram_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1881]
-WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1881]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1881]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (20#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1664]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_1' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (1#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uart16550_0_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uart16550_0_0' (2#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'baudoutn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'ddis' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'dtrn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'out1n' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'out2n' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'rtsn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'rxrdyn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7071] port 'txrdyn' of module 'design_1_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'design_1_axi_uart16550_0_0' has 35 connections declared, but only 27 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:209]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_1' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_1' (3#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_blk_mem_gen_0_1' is unconnected for instance 'blk_mem_gen_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:237]
+WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_1' has 8 connections declared, but only 7 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:237]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (4#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (5#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (6#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (7#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:494]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1434]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (8#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1434]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1566]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (9#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1566]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1698]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (10#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1913]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1913]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1913]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1913]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 52 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1913]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (11#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1698]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1968]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (12#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:1968]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2114]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (13#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2114]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2494]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (14#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2494]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (15#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (16#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_araddr' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_arvalid' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_awaddr' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_awvalid' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_bready' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_rready' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_wdata' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_wstrb' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7071] port 'M04_AXI_wvalid' of module 'design_1_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+WARNING: [Synth 8-7023] instance 'microblaze_0_axi_periph' of module 'design_1_microblaze_0_axi_periph_0' has 136 connections declared, but only 114 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:343]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2260]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (17#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (18#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2406]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2406]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (19#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (20#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2452]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (21#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2477]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2477]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (22#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:2260]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
 	Parameter IN2_WIDTH bound to: 1 - type: integer 
@@ -221,94 +249,94 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/us
 	Parameter IN127_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 1 - type: integer 
 	Parameter NUM_PORTS bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (21#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (22#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (23#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/.Xil/Vivado-8296-DESKTOP-GN1E0PJ/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:463]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:463]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:463]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (24#1) [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (25#1) [C:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (23#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (24#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (25#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/.Xil/Vivado-21712-DESKTOP-GN1E0PJ/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:483]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:483]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:483]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (26#1) [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (27#1) [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1409.309 ; gain = 265.813
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1410.063 ; gain = 270.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1427.168 ; gain = 283.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1427.930 ; gain = 287.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1427.168 ; gain = 283.672
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1427.930 ; gain = 287.871
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1427.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1427.930 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_in_context.xdc] for cell 'design_1_i/axi_uart16550_0'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_in_context.xdc] for cell 'design_1_i/axi_uart16550_0'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
-Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
-Finished Parsing XDC File [c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
-Parsing XDC File [C:/Users/user/Desktop/FPGA_UART/top.xdc]
-Finished Parsing XDC File [C:/Users/user/Desktop/FPGA_UART/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/FPGA_UART/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_in_context.xdc] for cell 'design_1_i/axi_uart16550_0'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_in_context.xdc] for cell 'design_1_i/axi_uart16550_0'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [D:/0FPGA/project_FPGA_UART_BRAM/top.xdc]
+Finished Parsing XDC File [D:/0FPGA/project_FPGA_UART_BRAM/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/0FPGA/project_FPGA_UART_BRAM/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1460.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1454.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1460.816 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1454.609 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1461.809 ; gain = 318.313
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1457.805 ; gain = 317.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx485tffg1761-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1461.809 ; gain = 318.313
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1457.805 ; gain = 317.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  c:/Users/user/Desktop/FPGA_UART/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 6).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
@@ -328,10 +356,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uart16550_0. (cons
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1461.809 ; gain = 318.313
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1457.805 ; gain = 317.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1461.809 ; gain = 318.313
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1457.805 ; gain = 317.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -353,25 +381,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1461.809 ; gain = 318.313
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1457.805 ; gain = 317.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1488.734 ; gain = 345.238
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1489.449 ; gain = 349.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1488.957 ; gain = 345.461
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1489.820 ; gain = 349.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1508.012 ; gain = 364.516
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1508.879 ; gain = 368.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -389,37 +417,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -431,9 +459,9 @@ Report BlackBoxes:
 +------+---------------------------------+----------+
 |1     |design_1_xbar_0                  |         1|
 |2     |design_1_auto_pc_0               |         1|
-|3     |design_1_axi_bram_ctrl_0_0       |         1|
+|3     |design_1_axi_bram_ctrl_0_1       |         1|
 |4     |design_1_axi_uart16550_0_0       |         1|
-|5     |design_1_blk_mem_gen_0_0         |         1|
+|5     |design_1_blk_mem_gen_0_1         |         1|
 |6     |design_1_clk_wiz_1_0             |         1|
 |7     |design_1_mdm_1_0                 |         1|
 |8     |design_1_microblaze_0_0          |         1|
@@ -469,23 +497,23 @@ Report Cell Usage:
 |17    |OBUF                           |     1|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1514.180 ; gain = 336.043
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.180 ; gain = 370.684
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1515.043 ; gain = 345.109
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.043 ; gain = 374.984
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1526.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1527.094 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.289 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.688 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1540.289 ; gain = 396.793
-INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/synth_1/design_1_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1542.688 ; gain = 402.629
+INFO: [Common 17-1381] The checkpoint 'D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 28 16:40:58 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 17:08:26 2021...

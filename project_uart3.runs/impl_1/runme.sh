@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/user/Desktop/FPGA_UART/project_uart3.runs/impl_1'
+HD_PWD='D:/0FPGA/project_FPGA_UART_BRAM/project_uart3.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
