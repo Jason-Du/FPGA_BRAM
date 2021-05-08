@@ -3,58 +3,61 @@
 
 # XDC: D:/0FPGA/project_FPGA_UART_BRAM/top.xdc
 
-# Block Designs: bd/design_1/design_1.bd
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
+# Block Designs: bd/design_200MHZ/design_200MHZ.bd
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ || ORIG_REF_NAME==design_200MHZ} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_microblaze_0_0 || ORIG_REF_NAME==design_1_microblaze_0_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_microblaze_0_0/design_200MHZ_microblaze_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_microblaze_0_0 || ORIG_REF_NAME==design_200MHZ_microblaze_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_dlmb_v10_0 || ORIG_REF_NAME==design_1_dlmb_v10_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_dlmb_v10_0/design_200MHZ_dlmb_v10_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_dlmb_v10_0 || ORIG_REF_NAME==design_200MHZ_dlmb_v10_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ilmb_v10_0 || ORIG_REF_NAME==design_1_ilmb_v10_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_ilmb_v10_0/design_200MHZ_ilmb_v10_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_ilmb_v10_0 || ORIG_REF_NAME==design_200MHZ_ilmb_v10_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==design_1_dlmb_bram_if_cntlr_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_dlmb_bram_if_cntlr_0/design_200MHZ_dlmb_bram_if_cntlr_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==design_200MHZ_dlmb_bram_if_cntlr_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==design_1_ilmb_bram_if_cntlr_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_ilmb_bram_if_cntlr_0/design_200MHZ_ilmb_bram_if_cntlr_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==design_200MHZ_ilmb_bram_if_cntlr_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_lmb_bram_0 || ORIG_REF_NAME==design_1_lmb_bram_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_lmb_bram_0/design_200MHZ_lmb_bram_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_lmb_bram_0 || ORIG_REF_NAME==design_200MHZ_lmb_bram_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_xbar_0/design_200MHZ_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_xbar_0 || ORIG_REF_NAME==design_200MHZ_xbar_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_1_microblaze_0_axi_periph_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_microblaze_0_axi_periph_0/design_200MHZ_microblaze_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_200MHZ_microblaze_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_microblaze_0_axi_intc_0 || ORIG_REF_NAME==design_1_microblaze_0_axi_intc_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_microblaze_0_axi_intc_0/design_200MHZ_microblaze_0_axi_intc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_microblaze_0_axi_intc_0 || ORIG_REF_NAME==design_200MHZ_microblaze_0_axi_intc_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_microblaze_0_xlconcat_0 || ORIG_REF_NAME==design_1_microblaze_0_xlconcat_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_microblaze_0_xlconcat_0/design_200MHZ_microblaze_0_xlconcat_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_microblaze_0_xlconcat_0 || ORIG_REF_NAME==design_200MHZ_microblaze_0_xlconcat_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_mdm_1_0 || ORIG_REF_NAME==design_1_mdm_1_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_mdm_1_0/design_200MHZ_mdm_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_mdm_1_0 || ORIG_REF_NAME==design_200MHZ_mdm_1_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_clk_wiz_1_0 || ORIG_REF_NAME==design_1_clk_wiz_1_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_clk_wiz_1_0/design_200MHZ_clk_wiz_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_clk_wiz_1_0 || ORIG_REF_NAME==design_200MHZ_clk_wiz_1_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_1_rst_clk_wiz_1_100M_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_rst_clk_wiz_1_100M_0/design_200MHZ_rst_clk_wiz_1_100M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_200MHZ_rst_clk_wiz_1_100M_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_uart16550_0_0 || ORIG_REF_NAME==design_1_axi_uart16550_0_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_axi_uart16550_0_0/design_200MHZ_axi_uart16550_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_axi_uart16550_0_0 || ORIG_REF_NAME==design_200MHZ_axi_uart16550_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_blk_mem_gen_0_1 || ORIG_REF_NAME==design_1_blk_mem_gen_0_1} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_axi_bram_ctrl_0_0/design_200MHZ_axi_bram_ctrl_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_axi_bram_ctrl_0_0 || ORIG_REF_NAME==design_200MHZ_axi_bram_ctrl_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_1 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_1} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_blk_mem_gen_0_0/design_200MHZ_blk_mem_gen_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_blk_mem_gen_0_0 || ORIG_REF_NAME==design_200MHZ_blk_mem_gen_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
+# IP: bd/design_200MHZ/ip/design_200MHZ_fifo_generator_0_0/design_200MHZ_fifo_generator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_fifo_generator_0_0 || ORIG_REF_NAME==design_200MHZ_fifo_generator_0_0} -quiet] -quiet
 
-# XDC: d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# IP: bd/design_200MHZ/ip/design_200MHZ_auto_pc_0/design_200MHZ_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_200MHZ_auto_pc_0 || ORIG_REF_NAME==design_200MHZ_auto_pc_0} -quiet] -quiet
+
+# XDC: d:/0FPGA/project_FPGA_UART_BRAM/project_uart3.gen/sources_1/bd/design_200MHZ/design_200MHZ_ooc.xdc
